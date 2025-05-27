@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.8;
+    font-size: 20px;
+}
+
+/* Header */
+header {
+    background-color: #87CEEB;
+    border-bottom: 1px solid #eaeaea;
+    padding: 30px 60px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.btn-cadastro {
+    background-color: #228B22;
+    color: #f7f7f7;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+
+
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background 0.3s ease, color 0.3s ease;
+    height: 40px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.logo h1 {
+    font-size: 36px;
+    color: #000000;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+
+}
+
+
+
+
+
+nav a:hover {
+    background-color: #228B22;
+    color: #fff;
+
+
+}
+
+.active {
+    color: white;
+
+
+}
+
+
+
+/* Introdução */
+.intro {
+    /*
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1400px;
+    padding: 60px;*/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.intro-img {
+    margin-top: 110px;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.intro-text h2 {
+    font-size: 54px;
+    margin-bottom: 30px;
+}
+
+.intro-text h2 .blue {
+    color: #87CEEB;
+}
+
+.intro-text p {
+    font-size: 22px;
+    color: #555;
+}
+
+.intro-img img {
+    max-width: 700px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.titulo-central {
+    display: flex;
+    /* Faz centralizar em todas as telas */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 50px 0 30px 0;
+}
+
+.titulo-central h1 {
+    font-size: 48px;
+    color: #87CEEB;
+    text-align: center;
+    /* opcional, mas ajuda */
+}
+
+
+
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.profile img {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.text {
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+}
+
+.text p {
+    margin-bottom: 15px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.titulo-central {
+    text-align: center;
+    margin: 50px 0 30px 0;
+    /* espaço superior e inferior */
+}
+
+.titulo-central h1 {
+    font-size: 48px;
+    color: #87CEEB;
+}
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background: transparent;
+    padding-bottom: 100px;
+
+
+}
+
+.item-galeria {
+    background: transparent;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s;
+    outline: none;
+    height: 400px;
+
+}
+
+.item-galeria:focus,
+.item-galeria:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+.item-galeria img {
+    width: 70%;
+    height: 350px;
+    object-fit: cover;
+    border-bottom: 1px solid #ccc;
+}
+
+.item-galeria p {
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: #8B4513
+}
+
+.galeria {
+
+    font: size 40px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #8B4513
+}
+
+a:hover {
+    text-decoration: underline;
+    /* ou outra indicação */
+}
+
+
+/* Footer */
+footer {
+    background-color: #A9A9A9;
+    border-top: 1px solid #eaeaea;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 18px;
+    color: #070000;
+}
+
+
+
+
+@media (max-width: 800px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .image-text,
+    .image-text.reverse {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+
+    .image-text img {
+        width: 20%;
+        max-width: 300px;
+    }
+
+    .image-text .text {
+        text-align: left;
+        padding: 0 10px;
+        font-size: 10px;
+    }
+
+    .image-text .text h2 {
+        font-size: 24px;
+    }
+
+    .image-text .text p {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 10px;
+        padding: 20px 10px;
+    }
+
+    .intro-text h2 {
+        font-size: 30px;
+    }
+
+    body {
+        font-size: 10px;
+    }
+
+
+    header {
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+    .logo {
+        display: none;
+    }
+
+
+
+    .menu nav ul {
+        flex-direction: column;
+        /* muda para coluna */
+        gap: 10px;
+        width: 100%;
+    }
+
+    .menu nav ul li {
+        width: 100%;
+    }
+
+    .menu nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        /* o container também */
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .btn-cadastro {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+        font-size: 18px;
+        border-radius: 6px;
+    }
+
+    .intro {
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+
+    }
+
+    .intro-img {
+        height: 50px;
+        padding:  0px;
+    }
+
+    .titulo-central h1 {
+        font-size: 30px;
+        padding: 0;
+        margin: 100px 0 0 0; /* Ajuste o valor conforme a necessidade */
+    }
+    * {
+        margin: 15px;
+    }
+    .item-galeria{
+        height: 200px;
+        margin: 10px;
+        align-items: center;
+        padding: 0px;
+        
+    }
+
+   p {
+     
+        margin-block-start: 2em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        unicode-bidi: isolate;
+        font-size: 22px;
+        color: #555;
+   }
+
+   .item-galeria p {
+    height: 400px;
+    width: 100px;
+    margin: 1px;
+    align-items: center;
+    
+    font-size: 10px;
+   
+}
+
+
+.conteudo{
+    padding: 0;
+    margin: 20;
+    flex-direction: column;
+
+}
+
+
+footer {
+    background-color: #A9A9A9;
+    padding-top: 1px;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+    font-size: 5px;
+    color: #070000;
+}
+footer p{
+    font-size: 10px;
+
+}
+.grid{
+    padding-bottom: 1px;
+}
+    }
