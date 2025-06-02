@@ -405,7 +405,7 @@ footer {
     .titulo-central h1 {
         font-size: 30px;
         padding: 0;
-        margin: 100px 0 0 0; /* Ajuste o valor conforme a necessidade */
+        margin:  200px 0px 50px 50px; /* Ajuste o valor conforme a necessidade */
     }
     * {
         margin: 15px;
